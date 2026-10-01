@@ -76,3 +76,9 @@ g.main:has(> g.plot)>rect {
 video {
   border-radius: 40px;
 }
+
+.prose img {
+  border-radius: 16px;
+  border: 1px solid var(--color-fd-border);
+  @apply shadow-md;
+}
