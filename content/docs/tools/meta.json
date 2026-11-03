@@ -1,6 +1,7 @@
 {
-  "title": "Productivity Tools",
+  "title": "Productivity tools",
   "pages": [
-    "..."
+    "google-calendar",
+    "obsidian"
   ]
 }
