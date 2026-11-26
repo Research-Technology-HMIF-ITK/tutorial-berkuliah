@@ -62,7 +62,7 @@ aside p.inline-flex {
 }
 
 .block > h3 {
-  @apply my-2 font-medium text-lg tracking-tight
+  @apply my-2 font-medium text-xl tracking-tight
 }
 
 .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
@@ -81,4 +81,68 @@ video {
   border-radius: 16px;
   border: 1px solid var(--color-fd-border);
   @apply shadow-md;
+}
+
+/* ---- Callout (custom, clean & professional) ---- */
+.callout {
+  --callout: var(--color-fd-info);
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-block: 1rem;
+  padding: 0.875rem 1rem;
+  border-radius: 12px;
+  border: 2px solid color-mix(in srgb, var(--callout) 20%, transparent);
+  border-left: 2px solid var(--callout);
+  background-color: color-mix(in srgb, var(--callout) 7%, transparent);
+}
+
+.callout-info {
+  --callout: var(--color-fd-info);
+}
+
+.callout-warning {
+  --callout: var(--color-fd-warning);
+}
+
+.callout-success {
+  --callout: var(--color-fd-success);
+}
+
+.callout-error {
+  --callout: var(--color-fd-error);
+}
+
+.callout-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--callout);
+}
+
+.callout-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.callout-title {
+  margin: 0 0 0.25rem;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--color-fd-card-foreground);
+}
+
+.callout-body {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--color-fd-muted-foreground);
+}
+
+.callout-body > :first-child {
+  margin-top: 0;
+}
+
+.callout-body > :last-child {
+  margin-bottom: 0;
 }

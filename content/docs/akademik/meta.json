@@ -1,6 +1,11 @@
 {
   "title": "Akademik",
   "pages": [
-    "..."
+    "index",
+    "sistem-informasi-akademik",
+    "frs",
+    "jadwal-perkuliahan",
+    "sistem-informasi-kurikulum",
+    "layanan-administrasi-fakultas"
   ]
 }
